@@ -2,6 +2,7 @@ package StepDef;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,16 +15,13 @@ import java.util.List;
 public class SelectMenu {
     WebDriver driver;
 
-    @Given("User Open Browser")
-    public void userOpenBrowser() {
+    @And("^User go to https://demoqa\\.com/select-menu$")
+    public void userGoToHttpsDemoqaComSelectMenu() throws InterruptedException {
         final String dir = System.getProperty("user.dir");
         System.out.println("current dir = " + dir);
         System.setProperty("webdriver.chrome.driver", dir+"/driver/chromedriver.exe");
         driver = new ChromeDriver();
-    }
 
-    @And("^User go to https://demoqa\\.com/select-menu$")
-    public void userGoToHttpsDemoqaComSelectMenu() throws InterruptedException {
         driver.get("https://demoqa.com/select-menu");
         Thread.sleep(1000);
     }
@@ -62,7 +60,7 @@ public class SelectMenu {
 
             for (int i = 0; i < allChildElements.size(); i++) {
                 allChildElements.get(i).click();
-                Thread.sleep(1000);
+                Thread.sleep(3000);
             }
 
         } else {
@@ -70,5 +68,33 @@ public class SelectMenu {
             driver.findElement(By.className("css-1wa3eu0-placeholder")).click();
         }
 //        driver.findElement(By.xpath("//*[text() = \""+arg0+"\"]")).click();
+    }
+
+    @Given("User go to https:\\/\\/demoqa.com\\/books")
+    public void userGoToHttpsDemoqaComBooks() throws InterruptedException {
+        final String dir = System.getProperty("user.dir");
+        System.out.println("current dir = " + dir);
+        System.setProperty("webdriver.chrome.driver", dir+"/driver/chromedriver.exe");
+        driver = new ChromeDriver();
+
+        driver.get("https://demoqa.com/books");
+        Thread.sleep(1000);
+    }
+
+    @When("User in {string} page")
+    public void userInPage(String arg0) {
+//        driver.findElement(By.xpath("//*[text() = \""+arg0+"\"]")).isDisplayed();
+        driver.findElement(By.xpath("//div[text() = 'Book Store']")).isDisplayed();
+    }
+
+    @And("User search book {string}")
+    public void userSearchBook(String arg0) {
+        driver.findElement(By.id("searchBox")).isDisplayed();
+        driver.findElement(By.id("searchBox")).sendKeys("qa engineer");
+    }
+
+    @Then("User see {string}")
+    public void userSee(String arg0) {
+        driver.findElement(By.xpath("//div[text()='No rows found']")).isDisplayed();
     }
 }

@@ -1,7 +1,6 @@
 Feature: Select Value DemoQA
   Scenario: I want to select an option
-    Given User Open Browser
-    And User go to https://demoqa.com/select-menu
+    Given User go to https://demoqa.com/select-menu
     When User in select menu page
     And User choose select value "Another root option"
     And User choose select one "Other"
