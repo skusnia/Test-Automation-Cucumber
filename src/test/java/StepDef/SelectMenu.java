@@ -34,19 +34,19 @@ public class SelectMenu {
     @And("User choose select value {string}")
     public void userChooseSelectValue(String arg0) {
         driver.findElement(By.id("withOptGroup")).click();
-        driver.findElement(By.xpath("//*[text() = \""+arg0+"\"]")).click();
+        driver.findElement(By.xpath("//*[text() = 'Another root option']")).click();
     }
 
     @And("User choose select one {string}")
     public void userChooseSelectOne(String arg0) {
         driver.findElement(By.id("selectOne")).click();
-        driver.findElement(By.xpath("//*[text() = \""+arg0+"\"]")).click();
+        driver.findElement(By.xpath("//*[text() = 'Other']")).click();
     }
 
     @And("User choose old style select menu {string}")
     public void userChooseOldStyleSelectMenu(String arg0) {
         Select val = new Select(driver.findElement(By.id("oldSelectMenu")));
-        val.selectByVisibleText(arg0);
+        val.selectByVisibleText("Aqua");
     }
 
     @And("User choose multi select drop down {string}")
