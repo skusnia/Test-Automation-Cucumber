@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a524f83-bd8a-4fb5-80fc-15ccb08ede95" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/StepDef/ApiStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/ApiFeatures/TestApi1.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDef/SelectMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDef/SelectMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,15 +36,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/skusnia/Test-Automation-Cucumber/src/test/java/StepDef&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/user/skusnia/Test-Automation-Cucumber/src/test/java/StepDef",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Mencari buku yang tidak terdaftar">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\skusnia\Test-Automation-Cucumber\src\test\resources\ApiFeatures" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Scenario: Check Number Data return">
     <configuration name="Feature: SelectMenu (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/SelectMenu.feature" />
@@ -62,14 +69,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: SelectMenu" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Check Number Data return" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/SelectMenu.Feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/ApiFeatures/TestApi1.feature" />
       <option name="GLUE" value="StepDef" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Test-Automation-Cucumber" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: SelectMenu" />
+      <option name="NAME_FILTER" value="^Check Number Data return$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Check Number Data return$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Check Number Data return" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -142,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Check Number Data return" />
         <item itemvalue="Cucumber Java.Scenario: Mencari buku yang tidak terdaftar" />
         <item itemvalue="Cucumber Java.Feature: SelectMenu (1)" />
         <item itemvalue="Cucumber Java.Scenario: I want to select an option (1)" />
         <item itemvalue="Cucumber Java.Scenario: I want to select an option" />
-        <item itemvalue="Cucumber Java.Feature: SelectMenu" />
       </list>
     </recent_temporary>
   </component>
